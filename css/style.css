@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body{
+    overflow-x: clip ;
+}
+
 body {
     font-family: 'Noto Sans JP', sans-serif;
     color: #333;
@@ -38,9 +49,7 @@ a {
     color: #333;
 }
 
-a:hover {
-    opacity: 0.7;
-}
+
 
 .btn {
     display: inline-block;
@@ -105,7 +114,7 @@ header
     padding: 20px 8%;
 }
 
-.nav {
+.nav ul {
     display: flex;
     gap: 20px;
     list-style: none;
@@ -113,6 +122,10 @@ header
 
 .nav a {
     display: block;
+}
+
+.nav a:hover {
+    opacity: 0.7;
 }
 
 .nav li {
@@ -239,6 +252,7 @@ works
 }
 
 .work:hover {
+    opacity: 0.7;
     transform: translateY(-4px);
 }
 
@@ -285,19 +299,6 @@ skill
     border-radius: 8px;
 }
 
-.skill-item::after {
-    content: "";
-    width: 2px;
-    height: 80%;
-    background-color: #ede8e3;
-    position: absolute;
-    bottom: 0;
-    right: -5%;
-}
-
-.skill-item:last-child::after {
-    display: none;
-}
 
 .skill-icons {
     display: flex;
@@ -350,16 +351,142 @@ footer
 スマホ版
 ========================================*/
 @media screen and (max-width: 768px) {
+    main {
+        padding-top: 82px;
+    }
 
     section {
         padding: 56px 0;
     }
 
     /*---------------------------------
+     header
+    ---------------------------------*/
+    .header {
+        width: 100%;
+        height: 82px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 40;
+        background-color: #fff;
+    }
+
+    #header .hamburger {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 10%;
+        z-index: 30;
+    }
+
+    #header .hamburger span {
+        width: 30px;
+        height: 3px;
+        background-color: #333;
+        display: inline-block;
+        position: absolute;
+        left: 10px;
+        transition: all 0.4s;
+    }
+
+    #header .hamburger span:nth-last-of-type(1) {
+        top: 16px;
+    }
+
+    #header .hamburger span:nth-last-of-type(2) {
+        top: 25px;
+    }
+
+    #header .hamburger span:nth-last-of-type(3) {
+        top: 34px;
+    }
+
+    .nav {
+        width: 80%;
+        height: 100dvh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        transform: none;
+        z-index: 20;
+        transition: right 0.6s;
+        background-color: #f7f7f7;
+    }
+
+    .nav ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 48px;
+        list-style: none;
+    }
+
+    .nav li {
+        font-size: 24px;
+        padding-bottom: 48px;
+        text-align: center;
+    }
+
+    /*---------------------------------
+      menu open
+    ---------------------------------*/
+
+    body.menu-open {
+        overflow: hidden;
+    }
+
+    .nav.active {
+        right: 0;
+    }
+
+    #header .hamburger.active span:nth-last-of-type(1) {
+        top: 24px;
+        transform: rotate(-45deg);
+    }
+
+    #header .hamburger.active span:nth-last-of-type(2) {
+        opacity: 0;
+    }
+
+    #header .hamburger.active span:nth-last-of-type(3) {
+        top: 24px;
+        transform: rotate(45deg);
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s;
+        z-index: 10;
+    }
+
+    .overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+
+
+
+    /*---------------------------------
      fv
     ---------------------------------*/
 
     .fv {
+        height: auto;
+        min-height: auto;
         flex-direction: column-reverse;
         align-items: normal;
     }
@@ -367,10 +494,14 @@ footer
     .fv .img {
         width: 100%;
     }
+    .fv-title {
+    font-size: 2.5rem;
+    margin: 16px 0 24px 0;
+}
 
     .fv-text {
         width: 100%;
-        padding: 40px 5%;
+        padding: 24px 5%;
     }
 
     /*---------------------------------

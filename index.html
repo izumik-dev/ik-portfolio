@@ -16,20 +16,28 @@
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <!--オリジナルCSS-->
     <link rel="stylesheet" href="css/style.css">
+    <!--JavaScript-->
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
 
-    <header class="header">
+    <header id="header" class="header">
         <h1 class="logo">Izumi K.</h1>
-        <nav>
-            <ul class="nav font-english">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav">
+            <ul class="font-english">
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#works">WORKS</a></li>
                 <li><a href="#skill">SKILL</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
+        <div class="overlay"></div>
     </header>
 
     <main>
