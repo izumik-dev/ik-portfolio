@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+/*---------------------------------
+fv
+---------------------------------*/
+
+.fv {
+    background: #fff;
+}
+
+.fv .img {
+    width: 67%;
+}
+
+.fv .img img {
+    border-radius: 16px;
+}
+
+.fv-text {
+    width: 30%;
+    margin-right: 3%;
+}
+
+.fv .sub {
+    letter-spacing: 0.08em;
+}
+
+.fv-title {
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+/*---------------------------------
+overview
+---------------------------------*/
+.overview h2 {
+    text-align: center;
+    margin-bottom: 56px;
+    letter-spacing: 0.05em;
+}
+
+.overview h2 .en,
+.overview h2 .ja {
+    display: block;
+}
+
+.overview h2 .ja {
+    font-size: 1.75rem;
+    position: relative;
+    display: inline-block;
+}
+
+.overview h2 .ja::after {
+    content: "";
+    height: 2.5px;
+    width: 56px;
+    background-color: #c8b49b;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+.overview h2 .en {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.overview-block {
+    margin-bottom: 100px;
+}
+
+.overview-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.overview-list dt {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 16px;
+    font-size: 1.25rem;
+}
+
+.overview-list dt img {
+    width: 24px;
+    height: 24px;
+}
+
+/*---------------------------------
+other works
+---------------------------------*/
+.other-works {
+    background-color: #f7f7f7;
+}
+
+.other-works .btn {
+    display: block;
+    width: fit-content;
+    margin: 32px auto 0;
+}
+
+/*---------------------------------
+contact
+---------------------------------*/
+
+.contact {
+    background-color: #fff;
+}
+
+/*========================================
+スマホ版
+========================================*/
+@media screen and (max-width: 768px) {
+    /*---------------------------------
+     fv
+    ---------------------------------*/
+
+    .fv .img {
+        width: 100%;
+    }
+
+    .fv-title {
+        line-height: 1.4;
+        font-size: 1.5rem;
+    }
+
+    .fv-text {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /*---------------------------------
+     overview
+    ---------------------------------*/
+
+    .overview h2 {
+    margin-bottom: 32px;
+}
+
+    .overview-block{
+        margin-bottom: 56px;
+    }
+
+
+    .overview-list {
+        grid-template-columns:1fr;
+    }
+}
