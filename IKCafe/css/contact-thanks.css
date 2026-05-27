@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+
+.thanks .bold {
+    font-weight: 600;
+}
+
+.contact-form {
+    text-align: center;
+    border: solid 1px #333;
+    margin-bottom: 32px;
+}
+
+.contact-form dt {
+    background-color: #D9D9D9;
+    padding: 10px;
+}
+
+.contact-form dd {
+    padding: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    color: #333;
+    text-align: center;
+    width: 100%;
+}
+
+.contact-form textarea {
+    height: 248px;
+}
+
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #999;
+}
+
+.form-btn {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-btn .btn {
+    width: 180px;
+}
+
+/*============================================
+ デスクトップ
+=============================================*/
+@media (min-width:768px) {
+
+    .contact .text,
+    .thanks .text {
+        text-align: center;
+    }
+
+    .contact-form {
+        margin-bottom: 100px;
+    }
+
+    .form-item {
+        display: flex;
+        border-bottom: solid 1px #333;
+    }
+
+    .form-item dt {
+        width: 25%;
+        min-width: 180px ;
+    }
+
+    .form-item dd {
+        width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        text-align: start;
+        width: 100%;
+    }
+}

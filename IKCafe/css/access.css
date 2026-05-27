@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+.info-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 32px 0;
+}
+
+.info-list dt{
+    width: 30%;
+    margin-bottom: 16px;
+}
+.info-list dd{
+    width: 70%;
+    margin-bottom: 16px;
+}
+
+/*============================================
+ デスクトップ
+=============================================*/
+@media (min-width:768px) {
+
+    .access .inner.reverse{
+        align-items: normal;
+        flex-direction: row-reverse;
+    }
+    .access .img{
+        width: 50%;
+    }
+    .access .img img{
+        height: 400px;
+        object-fit: cover;
+        
+    }
+    .access .info{
+        width: 50%;
+    }
+    .info-list{
+        margin: 0 0 56px 0;
+    }
+
+    .access .info .text{
+        font-size: 16px;
+    }
+
+    .access .map{
+        width: 100%;
+    }
+
+}

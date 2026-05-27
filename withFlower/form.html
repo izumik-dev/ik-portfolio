@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>with Flower｜△△市のフラワーアレンジメント教室</title>
+    <meta name="description" content="with Flowerは△△市の少人数制フラワーアレンジメント教室です。自宅レッスンで季節のお花を楽しみませんか？体験レッスン3300円受付中。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <script src="js/main.js" defer></script>
+
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="header-inner">
+
+            <h1 class="logo font">
+                <a href="index.html">
+                    with Flower
+                </a>
+            </h1>
+
+            <nav class="navi">
+                <ul class="navi-list font">
+                    <li><a href="index.html#course">Course</a></li>
+                    <li><a href="index.html#profile">Profile</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="form.html">レッスン予約</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+        <div class="overlay"></div>
+    </header>
+
+    <main>
+        <h1 class="page-title font">レッスン予約</h1>
+        <div class="wrapper">
+
+            <p class="text">
+                レッスンのご予約はこちらのフォームから承っております。<br>
+                送信後、2日以内にメールにてご連絡いたします。
+            </p>
+
+            <div class="form-inner">
+                <form action="thanks.html" method="get">
+
+                    <dl>
+                        <div class="form-item">
+                            <dt>
+                                <label for="name">お名前*</label>
+                            </dt>
+                            <dd>
+                                <input type="text" name="name" id="name" placeholder="山田　花子" required>
+                            </dd>
+                        </div>
+
+                        <div class="form-item">
+                            <dt>
+                                <label for="mail">メールアドレス</label>
+                            </dt>
+                            <dd>
+                                <input type="email" name="mail" id="mail" placeholder="example@flower.com" required>
+                            </dd>
+                        </div>
+
+                        <div class="form-item">
+                            <dt>
+                                <label for="tel">電話番号</label>
+                            </dt>
+                            <dd>
+                                <input type="tel" name="tel" id="tel" placeholder="XXX-XXXX-XXX">
+                            </dd>
+                        </div>
+
+                        <div class="form-item">
+                            <dt>
+                                <label for="date">希望日時</label>
+                            </dt>
+                            <dd>
+                                <input type="date" name="date" id="date">
+                            </dd>
+                            <p class="date-text">※日付を選択してください</p>
+                        </div>
+
+                        <div class="form-item">
+                            <dt>
+                               希望のレッスン
+                            </dt>
+                            <dd class="lesson">
+                                <label>
+                                    <input type="radio" name="lesson" value="trial" required>
+                                    体験レッスン (3300円)
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="lesson" value="oneday">
+                                    1Dayレッスン (16500円)
+                                </label>
+                            </dd>
+                        </div>
+
+                        <div class="form-item">
+                            <dt>
+                                <label for="message">メッセージ</label>
+                            </dt>
+                            <dd>
+                                <textarea name="message" id="message" placeholder="ここにメッセージを入れてください。"></textarea>
+                            </dd>
+                        </div>
+                    </dl>
+
+                    <button class="btn font" type="submit">レッスンを予約する</button>
+
+                </form>
+
+                <p class="message">※送信後、2日以内に返信いたします。</p>
+
+            </div>
+
+        </div>
+
+
+
+    </main>
+
+
+    <footer id="footer">
+        <div class="wrapper">
+            <div class="logo font">
+                <a href="index.html">with Flower</a>
+            </div>
+            <div class="info">
+                <p>
+                    〒000-0000<br>○○県△△市××× 0-0-0
+                </p>
+                <p>
+                    <span class="bold">TEL：XX-XXXX-XXXX</span><br>
+                    【受付時間：10:00 〜 18:00】
+                </p>
+            </div>
+            <div class="sns">
+                <div class="instagram">
+                    <a href="https://www.instagram.com">
+                        <img src="img/sns/instagram.svg" alt="instagram">
+                    </a>
+                </div>
+                <div class="facebook">
+                    <a href="https://www.facebook.com">
+                        <img src="img/sns/facebook.svg" alt="facebook">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright font">Copyright　&copy; 2026 with Flower</p>
+    </footer>
+
+</body>
+
+</html>

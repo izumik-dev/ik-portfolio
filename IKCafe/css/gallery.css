@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+.gallery-page .gallery-item:nth-child(n+5) {
+        display: block;
+    }

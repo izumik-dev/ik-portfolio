@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+.concept-item {
+    margin-bottom: 56px;
+}
+.concept .img{
+    margin-bottom: 56px;
+}
+
+.concept .img img {
+    width: 100%;
+}
+
+.concept {
+    text-align: left;
+}
+
+.concept h2 {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.description {
+    text-align: left;
+}
+
+/*============================================
+ デスクトップ
+=============================================*/
+@media (min-width:768px) {
+    .concept .inner .img {
+        width: 50%;
+    }
+
+    .concept .inner .img img {
+        height: 400px;
+        object-fit: cover;
+
+    }
+    .concept-item{
+        margin-bottom: 100px;
+    }
+
+    .concept-item .text {
+        margin: 0 0 0 56px;
+    }
+
+    .concept-item.reverse {
+        flex-direction: row-reverse;
+    }
+
+    .concept-item.reverse .text{
+        margin: 0 56px 0 0;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+}

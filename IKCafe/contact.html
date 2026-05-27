@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IK Cafe</title>
+    <meta name="description" content="コーヒーと自家製パンを提供するカフェ">
+
+    <!--リセットCSS-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!--オリジナルCSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact-thanks.css">
+    <script src="js/main.js" defer></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="inner">
+                <div class="logo font-english"><a href="index.html">IK Cafe</a></div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav>
+                    <ul class="navi-list font-english">
+                        <li><a href="concept.html">Concept</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="access.html">Access</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="overlay"></div>
+
+    <main>
+        <div class="page-top container inner">
+            <div class="img">
+                <img src="img/contact/contact_hero.jpg" alt="お問い合わせページのメインビジュアル">
+            </div>
+            <div class="page-top-right">
+                <h1 class="page-title font-english">Contact</h1>
+                <p class="page-top-text">ご質問やご予約など、<br>お気軽にお問い合わせください。</p>
+            </div>
+        </div>
+
+        <section class="contact wrapper">
+            <div class="container">
+                <p class="text">内容を確認のうえ、ご連絡いたします。<br>2〜3日以内にご返信いたします。</p>
+                <form action="thanks.html">
+                    <dl class="contact-form">
+                        <div class="form-item">
+                            <dt>
+                                <label for="name">お名前</label>
+                            </dt>
+                            <dd>
+                                <input type="text" name="name" id="name" required placeholder="例：山田　太郎">
+                            </dd>
+                        </div>
+                        <div class="form-item">
+                            <dt>
+                                <label for="mail">メールアドレス</label>
+                            </dt>
+                            <dd>
+                                <input type="email" name="mail" id="mail" required placeholder="例：example@ikcafe.com">
+                            </dd>
+                        </div>
+                        <div class="form-item">
+                            <dt>
+                                <label for="message">お問い合わせ内容</label>
+                            </dt>
+                            <dd>
+                                <textarea name="message" required id="message" placeholder="例：団体での貸切はできますか？"></textarea>
+                            </dd>
+                        </div>
+                    </dl>
+                    <div class="form-btn">
+                        <button type="submit" class="btn">送信する</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="wrapper">
+
+            <div class="inner">
+                <p class="logo font-english">
+                    <a href="#">IK Cafe</a>
+                </p>
+                <ul class="sns-list">
+                    <li class="sns-item">
+                        <a href="https://x.com">
+                            <img src="img/sns/x-twitter.svg" alt="X(旧Twitter)">
+                        </a>
+                    </li>
+                    <li class="sns-item">
+                        <a href="https://instagram.com">
+                            <img src="img/sns/instagram.svg" alt="Instagram">
+                        </a>
+                    </li>
+                    <li class="sns-item">
+                        <a href="https://facebook.com">
+                            <img src="img/sns/facebook.svg" alt="Facebook">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="copyright">&copy; 2026 IK Cafe All Rights Reserved.</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

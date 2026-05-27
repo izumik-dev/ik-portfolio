@@ -1,0 +1,830 @@
+@charset "UTF-8";
+
+:root {
+    --beige: #F7F4EF;
+    /*メインカラー*/
+    --pink: #ECD6D4;
+    /*アクセントカラー*/
+    --green: #6C8576;
+    /*ボタン,FAQ*/
+    --black: #000000;
+    /*文字*/
+    --white: #ffffff;
+    /*ボタン内文字*/
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: var(--beige);
+    color: var(--black);
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+.font {
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.page-title{
+    text-align: center;
+    font-size: 32px;
+    font-weight: normal;
+    background-color: var(--pink);
+    padding: 32px 0;
+}
+
+/*-----------------------------
+header
+-----------------------------*/
+#header {
+    width: 100%;
+}
+
+#header .header-inner{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 20px;
+    display: flex;
+    align-items: center;
+}
+
+#header .logo {
+    font-weight: normal;
+    font-size: 24px;
+    margin-right: auto;
+}
+
+
+#header .navi .navi-list {
+    display: flex;
+    gap: 40px;
+}
+
+
+/*-----------------------------
+hero
+-----------------------------*/
+.mainvisual {
+    max-width: 1100px;
+    padding: 0 20px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.introduction {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.introduction .catchphrase {
+    font-size: 36px;
+    margin-bottom: 32px;
+}
+
+.introduction .text {
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.introduction .btn {
+    display: block;
+    width: 440px;
+    margin: 0 auto;
+    background-color: var(--green);
+    color: var(--white);
+    font-size: 18px;
+    padding: 8px 30px;
+    border-radius: 10px;
+}
+
+.introduction .btn .sp {
+    display: none;
+}
+
+/*-----------------------------
+concept
+-----------------------------*/
+#concept .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 100px;
+}
+
+#concept .wrapper .img {
+    width: 50%;
+    height: 100%;
+}
+
+#concept .wrapper .text {
+    width: 50%;
+    margin-left: 10%;
+}
+
+#concept .wrapper .text p {
+    margin-bottom: 20px;
+}
+
+/*-----------------------------
+course
+-----------------------------*/
+#course {
+    background-color: var(--pink);
+}
+
+#course .section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    position: relative;
+    padding: 32px 0 32px 0;
+}
+
+#course .section-title::after {
+    content: "";
+    background-color: var(--black);
+    height: 1px;
+    width: 104px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+#course .section-title span {
+    display: block;
+}
+
+#course .section-title .ja {
+    font-size: 12px;
+}
+
+#course .item {
+    display: flex;
+    justify-content: space-between;
+}
+
+#course .item .box {
+    font-size: 18px;
+    width: 32%;
+    background-color: var(--beige);
+    margin-bottom: 64px;
+    padding: 32px 8px 64px 8px;
+    text-align: center;
+}
+
+#course .item .box .title {
+    display: inline-block;
+    background-color: var(--pink);
+    border: 1px solid;
+    padding: 10px;
+    margin-bottom: 32px;
+}
+
+#course .item .box .text {
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+#course .item .box ul {
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+#course .item .box ul li {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+#course .item .box .btn {
+    display: block;
+    background-color: var(--green);
+    border-radius: 10px;
+    color: var(--white);
+    padding: 8px 16px;
+    margin: 64px 16px 0;
+}
+
+/*-----------------------------
+profile
+-----------------------------*/
+#profile .section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    position: relative;
+    padding: 32px 0 100px 0;
+
+}
+
+#profile .section-title::after {
+    content: "";
+    background-color: var(--black);
+    height: 1px;
+    width: 104px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+#profile .section-title span {
+    display: block;
+}
+
+#profile .section-title .ja {
+    font-size: 12px;
+}
+
+#profile .container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 100px;
+}
+
+#profile .container .box-left {
+    width: 50%;
+    text-align: center;
+}
+
+#profile .container .box-left .img {
+    margin-bottom: 30px;
+}
+
+#profile .container .box-left .img img {
+    border-radius: 50%;
+}
+
+#profile .container .box-left .attention {
+    font-size: 10px;
+    margin-bottom: 19px;
+}
+
+#profile .container .box-left .name span {
+    display: block;
+}
+
+#profile .container .box-left .name .ja {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+#profile .container .box-left .name .en {
+    font-size: 14px;
+}
+
+#profile .text {
+    width: 50%;
+    margin-left: 10%;
+}
+
+#profile .text p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+/*-----------------------------
+faq
+-----------------------------*/
+#faq {
+    background-color: var(--pink);
+    margin-bottom: 100px;
+    padding-bottom: 64px;
+}
+
+#faq .section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    position: relative;
+    padding: 32px 0 32px 0;
+}
+
+#faq .section-title::after {
+    content: "";
+    background-color: var(--black);
+    height: 1px;
+    width: 64px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+#faq .section-title span {
+    display: block;
+}
+
+#faq .section-title .ja {
+    font-size: 12px;
+
+}
+
+#faq .faq-list {
+    max-width: 1100px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+#faq .faq-list .item {
+    margin-bottom: 32px;
+}
+
+#faq .faq-list .item dt {
+    background-color: var(--beige);
+    display: flex;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 16px 24px;
+    position: relative;
+}
+
+#faq .faq-list .item dt::before {
+    content: "";
+    width: 15px;
+    height: 1px;
+    background-color: var(--black);
+    position: absolute;
+    top: 28px;
+    right: 24px;
+}
+
+#faq .faq-list .item dt::after {
+    content: "";
+    width: 1px;
+    height: 15px;
+    background-color: var(--black);
+    position: absolute;
+    top: 21px;
+    right: 30px;
+    left: auto;
+}
+
+#faq .faq-list .item dt.active {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+#faq .faq-list .item dt.active::before {
+    background-color: var(--white);
+}
+
+
+#faq .faq-list .item dt.active::after {
+    content: none;
+}
+
+#faq .faq-list .item dt .question {
+    color: var(--green);
+    margin-right: 32%;
+}
+
+#faq .faq-list .item dd {
+    height: 0;
+    overflow: hidden;
+    transition: height .3s;
+}
+#faq .faq-list .item .answer-inner{
+    display: flex;
+    font-size: 18px;
+    line-height: 1.8;
+    padding: 18px 24px;
+    background-color: var(--beige);
+}
+
+#faq .faq-list .item dd .answer-inner span {
+    margin-right: 12%;
+}
+
+/*-----------------------------
+cta
+-----------------------------*/
+#cta .wrapper {
+    text-align: center;
+}
+
+#cta .wrapper p {
+    font-size: 32px;
+    margin-bottom: 64px;
+}
+
+#cta .wrapper span {
+    background: linear-gradient(transparent 50%, #ECD6D4 50%);
+}
+
+#cta .btn {
+    display: block;
+    width: 544px;
+    margin: 0 auto;
+    background-color: var(--green);
+    color: var(--white);
+    font-size: 32px;
+    padding: 8px 30px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+/*-----------------------------
+footer
+-----------------------------*/
+#footer {
+    padding: 32px 0;
+    background-color: var(--pink);
+}
+
+#footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+#footer .wrapper .logo {
+    font-size: 24px;
+}
+
+#footer .wrapper .info {
+    display: flex;
+    justify-content:center;
+    font-size: 14px;
+    width: 50%;
+}
+
+#footer .wrapper .info p {
+    margin-left: 24px;
+    text-align: left;
+}
+
+#footer .wrapper .info p .bold {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#footer .wrapper .sns {
+    display: flex;
+}
+
+#footer .wrapper .sns .facebook {
+    margin-left: 24px;
+}
+
+
+#footer .copyright {
+    text-align: center;
+    font-size: 12px;
+    color: var(--green);
+}
+
+
+
+
+
+
+
+/*===========================================
+スマートフォン
+===========================================*/
+@media screen and (max-width:767px) {
+
+    .page-title{
+    font-size: 24px;
+}
+
+    /*-----------------------------
+    header
+    -----------------------------*/
+    #header .hamburger{
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        right: 10px;
+        z-index: 30;
+
+    }
+    #header .hamburger span{
+        width: 30px;
+        height: 3px;
+        background-color: var(--black);
+        display: inline-block;
+        position: absolute;
+        left: 10px;
+        transition: all 0.4s;
+    }
+    #header .hamburger span:nth-last-of-type(1){
+        top: 16px;
+    }
+    #header .hamburger span:nth-last-of-type(2){
+        top: 25px;
+    }
+    #header .hamburger span:nth-last-of-type(3){
+        top: 34px;
+    }
+
+    #header .navi{
+        width: 80%;
+        height: 100vh;
+        background-color: var(--beige);
+        position: fixed;
+        top: 0;
+        right: -80%;
+        z-index: 20;
+        transition: all 0.6s;
+    }
+    #header .navi .navi-list{
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        padding: 60px 0;
+        overflow: auto;
+    }
+    #header .navi .navi-list li{
+        font-size: 24px;
+        padding-bottom: 48px;
+        text-align: center;
+    }
+    #header .navi.active{
+        right: 0;
+    }
+    #header .hamburger.active span:nth-last-of-type(1){
+        top: 24px;
+        transform: rotate(-45deg);
+    }
+    #header .hamburger.active span:nth-last-of-type(2){
+        opacity: 0;
+    }
+    #header .hamburger.active span:nth-last-of-type(3){
+        top: 24px;
+        transform: rotate(45deg);
+    }
+    #header .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s;
+        z-index: 10;
+    }
+    #header .overlay.active{
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+
+
+    /*-----------------------------
+    hero
+    -----------------------------*/
+    .mainvisual {
+        max-width: 100%;
+        padding: 0;
+        margin-bottom: 24px;
+    }
+
+    .introduction {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .introduction .catchphrase {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    .introduction .text {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    .introduction .btn {
+        width: 240px;
+        font-size: 16px;
+    }
+
+    .introduction .btn .sp {
+        display: block;
+    }
+
+    /*-----------------------------
+    concept
+    -----------------------------*/
+    #concept .wrapper {
+        flex-direction: column-reverse;
+        margin-bottom: 32px
+    }
+
+    #concept .wrapper .img {
+        width: 100%;
+    }
+
+    #concept .wrapper .img img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+    }
+
+    #concept .wrapper .text {
+        font-size: 16px;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    #concept .wrapper .text p {
+        margin-bottom: 16px;
+    }
+
+    /*-----------------------------
+    course
+    -----------------------------*/
+    #course .item {
+        flex-direction: column;
+    }
+
+    #course .item .box {
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 32px;
+        padding: 32px 20px;
+        text-align: center;
+    }
+
+    #course .item .box .title {
+
+        padding: 10px;
+        margin-bottom: 24px;
+    }
+
+    #course .item .box .title .pc {
+        display: none;
+    }
+
+
+    #course .item .box .text {
+        text-align: left;
+        margin-bottom: 24px;
+    }
+
+    #course .item .box ul {
+        font-size: 14px;
+        text-align: left;
+        margin-bottom: 24px;
+    }
+
+    #course .item .box .btn {
+        margin: 0 auto;
+        margin-top: 24px;
+        width: 240px;
+    }
+
+    /*-----------------------------
+    profile
+    -----------------------------*/
+    #profile .section-title {
+        padding: 32px 0;
+    }
+
+    #profile .container {
+        flex-direction: column;
+        margin-bottom: 64px;
+    }
+
+    #profile .container .box-left {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    #profile .container .box-left .img {
+        margin-bottom: 10px;
+    }
+
+    #profile .container .box-left .img img {
+        border-radius: 50%;
+        width: 300px;
+    }
+
+    #profile .container .box-left .attention {
+        font-size: 10px;
+        margin-bottom: 24px;
+    }
+
+    #profile .container .box-left .name .ja {
+        font-size: 24px;
+    }
+
+    #profile .container .box-left .name .en {
+        font-size: 12px;
+    }
+
+    #profile .text {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #profile .text p {
+        font-size: 16px;
+        line-height: 1.8;
+        margin-bottom: 16px;
+    }
+
+    /*-----------------------------
+    faq
+    -----------------------------*/
+    #faq {
+        margin-bottom: 64px;
+    }
+
+    #faq .faq-list .item {
+        margin-bottom: 16px;
+    }
+
+    #faq .faq-list .item dt {
+        font-size: 16px;
+    }
+
+    #faq .faq-list .item dt .question {
+        color: var(--green);
+        margin-right: 10%;
+    }
+    #faq .faq-list .item dt .text {
+        margin-right: 10%;
+    }
+
+
+    #faq .faq-list .item dd {
+        font-size: 16px;
+    }
+
+    #faq .faq-list .item dd span {
+        margin-right: 12%;
+        font-size: 16px;
+    }
+
+    /*-----------------------------
+    cta
+    -----------------------------*/
+    #cta .wrapper p {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    #cta .btn {
+        width: 75%;
+        font-size: 18px;
+        margin-bottom: 64px;
+    }
+
+    /*-----------------------------
+    footer
+    -----------------------------*/
+
+    #footer .wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #footer .wrapper .info {
+        width: 100%;
+        font-size: 12px;
+        margin: 32px 0;
+    }
+    #footer .wrapper .sns {
+        margin: 0 auto;
+    }
+
+}

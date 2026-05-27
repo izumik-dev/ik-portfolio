@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.text {
+    text-align: center;
+    font-size: 24px;
+    margin: 56px 0 100px 0;
+}
+
+.text .bottom {
+    margin-top: 24px;
+}
+
+.btn {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    background-color: var(--green);
+    color: var(--white);
+    font-size: 24px;
+    border-radius: 10px;
+    width: 286px;
+    padding: 16px;
+}
+
+/*===========================================
+スマートフォン
+===========================================*/
+@media screen and (max-width:767px) {
+
+    .text {
+        text-align: left;
+        font-size: 16px;
+        margin: 32px 0 64px 0;
+    }
+
+    .btn {
+        font-size: 16px;
+        border-radius: 10px;
+        width: 216px;
+        padding: 16px;
+    }
+}
